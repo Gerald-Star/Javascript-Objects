@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Objects Spike</title>
+</head>
+<body>
+
+    <section>
+
+        <h3> JavaScript Objects </h3>
+        <div>
+          <p>
+          You may have heard the term object before.
+          
+          Objects are similar to arrays, except that
+           instead of using indexes to access and modify 
+           their data, you access the data in objects 
+           through what are called properties. </p>
+          
+           <p>
+          Objects are useful for storing data in a structured way,
+           and can represent real world objects, like a cat.
+          
+          Here's a sample cat object:
+              <br>
+          const cat = { <br>
+            "name": "Whiskers", <br>
+            "legs": 4, <br>
+            "tails": 1, <br>
+            "enemies": ["Water", "Dogs"] <br>
+          }; <br>
+          </p>
+          </div>
+      
+          <br>
+          <div>
+      
+        <p>
+          In this example, all the properties are stored as strings,
+           such as name, legs, and tails. However, you can also
+            use numbers as properties. You can even omit the 
+            quotes for single-word string properties, as </p>
+          <br>
+          const anotherObject = { <br>
+            make: "Ford", <br>
+            5: "five", <br>
+            "model": "focus" <br>
+          }; <br>
+          <p>
+          However, if your object has any non-string properties, 
+          JavaScript will automatically typecast them as strings.
+      </p>
+      </div>
+      
+      </section>
+      <br>
+      <hr>
+      
+      <section>
+      
+         <h3> Accessing Object Properties with Dot Notation </h3>
+      
+         <div>
+         <p>
+      There are two ways to access the properties of an 
+      object: dot notation (.) and bracket notation ([]), 
+      similar to an array.
+      
+      Dot notation is what you use when you know the name of 
+      the property you're trying to access ahead of time.
+      
+      Here is a sample of using dot notation (.) to read an 
+      object's property: </p>
+      
+      <br>
+      const myObj = { <br>
+        prop1: "val1", <br>
+        prop2: "val2" <br>
+      }; <br>
+      <br>
+      const prop1val = myObj.prop1; <br>
+      const prop2val = myObj.prop2; <br>
+      <p>prop1val would have a value of the string val1, 
+          and prop2val would have a value of the string val2.</p> 
+      </div>
+    
+      </section>
+
+      <br> <hr>
+
+      <section>
+
+       <h3> Accessing Object Properties with Bracket Notation </h3>
+   
+       <p> The second way to access the properties of an object
+         is bracket notation ([]). If the property of the object
+          you are trying to access has a space in its name, 
+          you will need to use bracket notation.
+        <br>
+        However, you can still use bracket notation on object 
+        properties without spaces.
+
+        Here is a sample of using bracket notation to read an 
+        object's property: </p>
+        
+        <br>
+const myObj = { <br>
+  "Space Name": "Kirk", <br>
+  "More Space": "Spock", <br>
+  "NoSpace": "USS Enterprise" <br>
+}; <br>
+ <br>
+ <p>assessing with [] notation</p>
+
+const "SpaceValue" = myObj["Space Name"]; <br>
+const "MoreValue" = myObj['More Space']; <br>
+const "NoSpaceValue" = myObj["NoSpace"]; <br>
+
+myObj["Space Name"] would be the string Kirk, <br>
+myObj['More Space'] would be the string Spock, <br>
+myObj["NoSpace"] would be the string USS Enterprise. <br>
+
+<p> Note that property names with spaces in them must
+     be in quotes (single or double). </p>
+
+
+</section>
+
+<br><hr>
+
+<section>
+
+    <div>
+
+     <h3> Updating Object Properties</h3>
+     <p>
+After you've created a JavaScript object, you can update its properties at any time just like you would update any other variable. You can use either dot or bracket notation to update.
+
+For example, let's look at ourDog: You can dot notation or
+bracket notation to update an object.
+
+</p>
+const ourDog = { <br>
+  "name": "Camper", <br>
+  "legs": 4, <br>
+  "tails": 1, <br>
+  "friends": ["everything!"] <br>
+}; <br>
+Since he's a particularly happy dog, let's change his 
+name to the string Happy Camper. 
+
+Here's how we update his object's name property:
+<br> 
+ourDog.name = "Happy Camper"; <br>
+or ourDog["name"] = "Happy Camper"; <br>
+
+<p> Now when we evaluate ourDog.name, instead of getting Camper,
+     we'll get his new name, Happy Camper. </p>
+
+</p>
+    </div>
+</section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
